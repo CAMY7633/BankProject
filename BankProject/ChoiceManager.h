@@ -11,7 +11,7 @@ public:
 	~ChoiceManager() {
 	}
 
-
+	Account ACCOUNT;
 
 	int CHOICE;
 	

@@ -1,11 +1,9 @@
 #include "ChoiceManager.h"
-#include "Account.h"
 #include <iostream>
 #include <string>
 
 
 using namespace std;
-Account ACCOUNT;
 
 
 string endline = "*******************************************";
@@ -33,7 +31,20 @@ void ChoiceManager::GetChoice()
 		GetChoice();
 	}
 	if (CHOICE == 3) {
-		ACCOUNT.AddMoney();
+		ACCOUNT.RemoveMoney();
 		GetChoice();
+	}
+	if (CHOICE == 4) {
+		ACCOUNT.AddBitcoin();
+		GetChoice();
+	}
+	if (CHOICE == 5) {
+		ACCOUNT.RemBitcoin();
+		GetChoice();
+	}
+
+
+	if (CHOICE == 6) {
+		system("PAUSE");
 	}
 }

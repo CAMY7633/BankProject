@@ -27,3 +27,38 @@ void Account::RemoveMoney()
 	system("CLS");
 	cout << "MONEY REMOVED: " << MoneyALT << endl; MoneyALT = 0;
 }
+
+void Account::AddBitcoin()
+{
+	system("CLS");
+	cout << "ENTER BITCOIN AMOUNT: "; cin >> BitcoinMOD;
+	if (Money >= (BitcoinMOD * 1000)) {
+		Bitcoin = (Bitcoin + BitcoinMOD); Money = (Money - (BitcoinMOD * 1000));
+		BitcoinMOD = 0;
+		system("CLS");
+		cout << "BITCOIN SUCCESSFULLY ADDED!" << endl;
+	}
+	else {
+		BitcoinMOD = 0;
+		system("CLS");
+		cout << "YOUR TOO POOR!" << endl;
+	}
+
+}
+
+void Account::RemBitcoin()
+{
+	system("CLS");
+	cout << "ENTER BITCOIN AMOUNT: "; cin >> BitcoinMOD;
+	if (BitcoinMOD <= Bitcoin) {
+		Bitcoin = (Bitcoin - BitcoinMOD); Money = (Money + (BitcoinMOD * 1000));
+		BitcoinMOD = 0;
+		system("CLS");
+		cout << "BITCOIN REMOVED SUCCESSFULLY!" << endl;
+	}
+	else {
+		BitcoinMOD = 0;
+		system("CLS");
+		cout << "YOU DONT OWN THAT MUCH BITCOIN LOSER!" << endl;
+	}
+}

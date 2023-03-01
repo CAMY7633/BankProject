@@ -1,6 +1,4 @@
 #pragma once
-#include "ChoiceManager.h"
-
 class Account
 {
 
@@ -16,9 +14,13 @@ public:
 	int Bitcoin = 0;
 
 	int MoneyALT = 0;
+	int BitcoinMOD = 0;
 
 	void ShowAccountDetails();
 	void AddMoney();
 	void RemoveMoney();
+
+	void AddBitcoin();
+	void RemBitcoin();
 };
 

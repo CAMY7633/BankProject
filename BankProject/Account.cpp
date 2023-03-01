@@ -14,8 +14,16 @@ void Account::ShowAccountDetails()
 void Account::AddMoney()
 {
 	system("CLS");
-	cout << "ENTER AMOUNT: "; cin >> AddingMoney; Money = (Money + AddingMoney); 
+	cout << "ENTER AMOUNT: "; cin >> MoneyALT; Money = (Money + MoneyALT); 
 	system("CLS");
-	cout << "MONEY ADDED: " << AddingMoney << endl; AddingMoney = 0;
+	cout << "MONEY ADDED: " << MoneyALT << endl; MoneyALT = 0;
 	
+}
+
+void Account::RemoveMoney()
+{
+	system("CLS");
+	cout << "ENTER AMOUNT: "; cin >> MoneyALT; Money = (Money - MoneyALT);
+	system("CLS");
+	cout << "MONEY REMOVED: " << MoneyALT << endl; MoneyALT = 0;
 }

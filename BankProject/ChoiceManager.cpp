@@ -32,5 +32,8 @@ void ChoiceManager::GetChoice()
 		ACCOUNT.AddMoney();
 		GetChoice();
 	}
-
+	if (CHOICE == 3) {
+		ACCOUNT.AddMoney();
+		GetChoice();
+	}
 }

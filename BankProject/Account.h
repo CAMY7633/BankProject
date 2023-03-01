@@ -15,7 +15,7 @@ public:
 	int Money = 5000;
 	int Bitcoin = 0;
 
-	int AddingMoney = 0;
+	int MoneyALT = 0;
 
 	void ShowAccountDetails();
 	void AddMoney();

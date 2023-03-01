@@ -42,9 +42,4 @@ void ChoiceManager::GetChoice()
 		ACCOUNT.RemBitcoin();
 		GetChoice();
 	}
-
-
-	if (CHOICE == 6) {
-		system("PAUSE");
-	}
 }
